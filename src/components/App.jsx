@@ -1,12 +1,5 @@
-import { Component } from 'react';
+import PhoneBook from './PhoneBook/PhoneBook';
 
-
-export class App extends Component {
-  
-
-
-
-
-
-  
-}
+export const App = () => {
+  return <PhoneBook />;
+};
