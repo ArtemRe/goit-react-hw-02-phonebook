@@ -23,10 +23,7 @@ export default class FormAddContacts extends Component {
     this.setState({ name: '', number: '' });
   };
 
-  validateForm = data => {
-    const isValid = !!data.name && !!data.number;
-    return isValid;
-  };
+  
 
   render() {
     const { nameId, numberId, handelChange, handleSubmit } = this;

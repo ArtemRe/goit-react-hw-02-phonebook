@@ -58,10 +58,9 @@ export default class PhoneBook extends Component {
   }
 
   removeContact = id => {
-    this.setState(prev => {
-      const newContacts = prev.contacts.filter(item => item.id !== id);
+    this.setState(prev => {    
       return {
-        contacts: newContacts,
+        contacts: prev.contacts.filter(item => item.id !== id),
       };
     });
   };
